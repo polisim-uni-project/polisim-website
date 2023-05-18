@@ -2,11 +2,11 @@ import {
 	Box,
 	Flex
 } from "@chakra-ui/react"
-import FeatureCard from "./featureCard";
+import FeatureCard from "./FeatureCard";
 
 function Features () {
 	return (
-		<Box ml="20%" mr="20%" mt="125" mb="200" height="500">
+		<Box ml="20%" mr="20%" mt="150">
 			<Flex flexDirection={{ md: "column", lg: "row" }} gap={{ md: "5", lg: "5" }} justifyContent="space-between">
 				<FeatureCard icon="/images/ai_icon.svg" title="KI generierte Einsatzszenarien" text={[
 					"unendlich viele generierbare 3D Umgebungen", 

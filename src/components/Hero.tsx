@@ -8,7 +8,7 @@ import {
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import ThreeCanvas from "./ThreeCanvas";
 
-function HeroSection () {
+function Hero () {
 	return (
 		<Box mt="50" mr="250" ml="250" height="auto">
 			<HStack alignContent="top">
@@ -36,4 +36,4 @@ function HeroSection () {
 	)
 }
     
-export default HeroSection;
+export default Hero;
