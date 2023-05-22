@@ -44,10 +44,10 @@ export const App = () => (
     
     <Features/>
 
-    {/* */}
+    {/*
     <Box position="absolute" top="85%" zIndex={-1} w='200%' overflow="visible" right="-150%" h='1000px' bgGradient='radial(#FF00A81A, #ffffff26 65%)' />
     <Box position="absolute" top="70%" zIndex={-1} w='200%' overflow="visible" left="-150%" h='1000px' bgGradient='radial(#486CC747, #ffffff26 65%)' />
-    
+     */}
     
     <Vision/>
 
