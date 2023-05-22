@@ -24,7 +24,17 @@ function Navbar() {
 	const [open, setOpen] = useState(false);
 
   return (
-    <Flex as="nav" zIndex={2} align="center" justify="space-between" wrap="wrap" py="3" px="10" pl="250" pr="250" bg={colorMode === "light" ? "#ffffff99" : "gray.800"}>
+    <Flex 
+      as="nav"
+      zIndex={2} 
+      align="center"
+      justify="space-between" 
+      wrap="wrap" 
+      py="3" px="10" 
+      pl={{ base: "50", lg: "150", xl: "200", '2xl': "250" }}
+      pr={{ base: "50", lg: "150", xl: "200", '2xl': "250" }} 
+      bg={colorMode === "light" ? "#ffffff99" : "gray.800"}
+    >
       <Box as={Link} href="/" mr="auto" style={{ textDecoration: 'none' }} sx={{ "&:hover": { color: "polisimBlue.100" }}}>
         <Text fontSize="xl" fontWeight="bold" color="polisimBlue.100">POLISIM</Text>
       </Box>

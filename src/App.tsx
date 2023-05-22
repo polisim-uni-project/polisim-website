@@ -7,6 +7,8 @@ import Navbar from "./components/Navigation"
 import Hero from "./components/Hero"
 import Features from "./components/Features"
 import Vision from "./components/Vision"
+import Process from "./components/Process"
+
 
 const theme = extendTheme({
   colors: {
@@ -35,17 +37,21 @@ export const App = () => (
 
     <Navbar/>
 
-    <Box position="absolute" top="0" zIndex={-1} w='100%' h='500px' bgGradient='linear(to-tr, #ffffff1A 45%, #FF00A81A)' />
-    <Box position="absolute" top="0" zIndex={-1} w='100%' h='500px' bgGradient='linear(to-tl, #ffffff1A 45%, #486CC747)' />
+    <Box position="absolute" top="0" zIndex={-1} w='100%' h='500px' bgGradient='linear(to-tr, #ffffff26 45%, #FF00A821)' />
+    <Box position="absolute" top="0" zIndex={-1} w='100%' h='500px' bgGradient='linear(to-tl, #ffffff26 45%, #486CC759)' />
 
     <Hero/>
     
     <Features/>
 
-    {/*<Box position="absolute" top="35%" zIndex={-1} w='200%' left="-150%" h='1000px' bgGradient='radial(#FF00A81A, #ffffff1A 65%)' />
-    <Box position="absolute" top="70%" zIndex={-1} w='200%' right="-150%" h='1000px' bgGradient='radial(#486CC747, #ffffff1A 65%)' />*/}
-
+    {/*
+    <Box position="absolute" top="35%" zIndex={-1} w='200%' right="-150%" h='1000px' bgGradient='radial(#FF00A81A, #ffffff26 65%)' />
+    <Box position="absolute" top="35%" zIndex={-1} w='200%' left="-150%" h='1000px' bgGradient='radial(#486CC747, #ffffff26 65%)' />
+    */}
+    
     <Vision/>
+
+    <Process/>
 
   </ChakraProvider>
 )
