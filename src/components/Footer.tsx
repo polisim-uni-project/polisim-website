@@ -1,14 +1,14 @@
-import { Box, Flex, Text, Button, Link, useColorMode } from "@chakra-ui/react";
-import { useState } from "react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 function Footer() {
-  const { colorMode, toggleColorMode } = useColorMode();
-	const [open, setOpen] = useState(false);
-
   return (
-    <Flex as="nav" align="center" justify="space-between" wrap="wrap" py="6" px="10" bg={colorMode === "light" ? "gray.100" : "gray.800"}>
-      test
-    </Flex>
+    <Box as="footer" bg="polisimBlue.300" py={4}>
+      <Flex justifyContent="center">
+        <Text fontSize="sm" color="polisimBlue.200">
+          &copy; 2023 Polisim. All rights reserved.
+        </Text>
+      </Flex>
+    </Box>
   );
 }
 

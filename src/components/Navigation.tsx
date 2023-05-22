@@ -36,7 +36,7 @@ function Navbar() {
       bg={colorMode === "light" ? "#ffffff99" : "gray.800"}
     >
       <Box as={Link} href="/" mr="auto" style={{ textDecoration: 'none' }} sx={{ "&:hover": { color: "polisimBlue.100" }}}>
-        <Text fontSize="xl" fontWeight="bold" color="polisimBlue.100">POLISIM</Text>
+        <Text fontSize="xl" fontWeight="bold" color="gray.750">POLISIM</Text>
       </Box>
 
       <Box display={{ base: "none", md: "block" }}>

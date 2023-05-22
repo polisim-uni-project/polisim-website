@@ -4,7 +4,7 @@ import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Suspense, useEffect, useState } from "react";
 import { Box } from "@chakra-ui/react"
-import { MathUtils, Color, Vector3, Box3 } from "three";
+import { MathUtils, Color, Vector3 } from "three";
 import { OrthographicCamera } from '@react-three/drei'
 
 
@@ -12,28 +12,13 @@ const Model = () => {
 
   const gltf = useLoader(GLTFLoader, "/images/LightedVRHead.gltf");
 
-
-  const { size } = useThree(); // Access the size property of the canvas
-
+  const { size } = useThree();
   const canvasWidth = size.width;
   const canvasHeight = size.height;
-
-  // Calculate the appropriate scale for the model based on the canvas size
   const scale = Math.min(canvasWidth, canvasHeight) / 10;
-  const centerX = canvasWidth / 2;
-  const centerY = canvasHeight / 2;
-
-  let modelHeight = 1; // Default width if not able to determine from the model
-  
-  if (gltf.scene) {
-    const box = new Box3().setFromObject(gltf.scene);
-    modelHeight = box.max.y - box.min.y;
-    console.log(modelHeight)
-  }
 
   return (
-    <group position={[0, 1.25, 0]} rotation={[0, MathUtils.degToRad(-60), 0]}
-    >
+    <group position={[0, 1.25, 0]} rotation={[0, MathUtils.degToRad(-60), 0]}>
       <primitive object={gltf.scene} scale={scale / 6.5} />
     </group>
   );
@@ -65,10 +50,8 @@ const CameraHandler = () => {
     document.addEventListener('mousemove', handleMouseMove)
   }, [])
 
-  return null
+  return null;
 }
-
-
 
 
 export default function ThreeCanvas() {
