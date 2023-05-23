@@ -1,10 +1,17 @@
 import {
-  Box,
-  Text,
-  HStack,
-  Button,
-  Divider,
-  Hide
+	Box,
+	Text,
+	HStack,
+	Button,
+	Divider,
+	Hide,
+	Popover,
+	PopoverTrigger,
+	PopoverContent,
+	PopoverArrow,
+	PopoverCloseButton,
+	PopoverHeader,
+	PopoverBody
 } from "@chakra-ui/react"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import ThreeCanvas from "./ThreeCanvas";
@@ -19,7 +26,7 @@ function Hero () {
 						lineHeight={{ base: "37px", xl: "54px", '2xl': "80px" }}
 						fontWeight="700"
 						color="polisimGray.300"
-						>
+					>
 						Immersive Police Training through <Text bgGradient='linear(to-r, polisimBlue.100, polisimBlue.200 20%, polisimBlue.300)' bgClip='text'>Simulation</Text>
 					</Text>
 					<Text
@@ -28,15 +35,27 @@ function Hero () {
 						maxWidth="80%"
 						color="polisimGray.300"
 					>
-							Simulationsbasiertes Polizeitraining durch KI-generierte Szenarien: Verbesserung von Einsatzsituationen und Unterstützung der polizeipsychologischen Arbeit.
+						Simulationsbasiertes Polizeitraining durch KI-generierte Szenarien: Verbesserung von Einsatzsituationen und Unterstützung der polizeipsychologischen Arbeit.
 					</Text>
 					<HStack mt="30" gap="2">
 						<Button size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200">
-								coming soon...
+							coming soon...
 						</Button>
-						<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="outline" color="polisimBlue.200" borderWidth="2px" borderColor="polisimBlue.300">
+
+						<Popover>
+							<PopoverTrigger>
+							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="outline" color="polisimBlue.200" borderWidth="2px" borderColor="polisimBlue.300">
 								Kontakt
-						</Button>
+							</Button>
+							</PopoverTrigger>
+							<PopoverContent width="auto">
+								<PopoverArrow />
+								<PopoverCloseButton />
+								<PopoverHeader color="polisimBlue.200" bg="polisimBlue.500"><b>Email:</b></PopoverHeader>
+								<PopoverBody>peifer@hm.edu</PopoverBody>
+							</PopoverContent>
+						</Popover>
+
 					</HStack>
 				</Box>
 				<Hide breakpoint='(max-width: 600px)'>
