@@ -10,7 +10,7 @@ import { OrthographicCamera } from '@react-three/drei'
 
 const Model = () => {
 
-  const gltf = useLoader(GLTFLoader, "/images/LightedVRHead.gltf");
+  const gltf = useLoader(GLTFLoader, "/images/vr_head.gltf");
 
   const { size } = useThree();
   const canvasWidth = size.width;

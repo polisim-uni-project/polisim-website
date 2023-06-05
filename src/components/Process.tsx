@@ -68,15 +68,15 @@ function Process() {
 					flex="1"
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				>
-                    <VisionBlock title="Polisim Ablauf" text="
-                        Wir kümmern uns um die gesamte Infrastruktur:
-                        Von Simulation bis Evaluation.
+                    <VisionBlock title="Polisim process" text="
+                        We take care of the entire infrastructure:
+                        From simulation to evaluation.
                     "/>
 
 						<Popover>
 							<PopoverTrigger>
-							<Button rightIcon={<ArrowForwardIcon />} size="md" variant="solid" bg="polisimBlue.300" color="polisimBlue.200">
-								Demo buchen
+							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }}>
+								book a demo
 							</Button>
 							</PopoverTrigger>
 							<PopoverContent width="150px">
@@ -89,7 +89,7 @@ function Process() {
                     
 				</Box>
 				<Image
-					src="/images/polisim_process.svg"
+					src="/images/polisim_process_en.svg"
 					flex="1" 
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				/>

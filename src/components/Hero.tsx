@@ -35,17 +35,18 @@ function Hero () {
 						maxWidth="80%"
 						color="polisimGray.300"
 					>
-						Simulationsbasiertes Polizeitraining durch KI-generierte Szenarien: Verbesserung von Einsatzsituationen und Unterstützung der polizeipsychologischen Arbeit.
+						{/*Simulationsbasiertes Polizeitraining durch KI-generierte Szenarien: Verbesserung von Einsatzsituationen und Unterstützung der polizeipsychologischen Arbeit.*/}
+						Simulation-based police training through AI-generated scenarios: Improving operational situations and supporting police psychological work.
 					</Text>
 					<HStack mt="30" gap="2">
-						<Button size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200">
+						<Button size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }}>
 							coming soon...
 						</Button>
 
 						<Popover>
 							<PopoverTrigger>
-							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="outline" color="polisimBlue.200" borderWidth="2px" borderColor="polisimBlue.300">
-								Kontakt
+							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="outline" color="polisimBlue.200" borderWidth="2px" borderColor="polisimBlue.300" _hover={{ bg: "polisimBlue.400" }}>
+								contact
 							</Button>
 							</PopoverTrigger>
 							<PopoverContent width="auto">

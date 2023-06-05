@@ -63,13 +63,13 @@ function Vision() {
 				</Box>
 				<Box flex="1" width={{base: "75%", lg: "75%", xl: "50%"}} display="flex">
 					<VStack flex="1" width="100%" gap="0px">
-						<VisionBlock title="Usere Vision" text="
-							Unsere Vision ist es, Polizeibeamten ein sicheres, realistisches und dynamisches Training zu bieten, 
-							das ihr Selbstvertrauen und ihre Fähigkeiten stärkt die öffentliche Sicherheit zu wahren und sich selbst zu schützen.
+						<VisionBlock title="Our vision" text="
+							Our vision is to provide police officers with safe, realistic and dynamic training, 
+							that builds their confidence and skills to maintain public safety and protect themselves.
 						"/>
-						<VisionBlock title="Unser Fokus" text="
-							Insbesondere soll hier die verbale und nonverbale Kommunikation mit dem Gegenüber trainiert werden.
-							Körpersprache ist das wichtigste Werkzeug eines Polizisten - und das kann trainiert werden.
+						<VisionBlock title="Our focus" text="
+							The focus in particular lies in the verbal and nonverbal communication with the counterpart.
+							Body language is the most important tool of a police officer - and this can be trained.
 						"/>
 					</VStack>
 				</Box>

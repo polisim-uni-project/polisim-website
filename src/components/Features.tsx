@@ -24,19 +24,19 @@ function Features () {
 	return (
 		<Box ml={responsiveMargin} mr={responsiveMargin} mt={responsiveMarginTop}>
 			<Flex flexDirection={{ base: "column", md: "column", lg: "row" }} gap={{ base: "5", md: "5", lg: "5" }} justifyContent="space-between">
-				<FeatureCard icon="/images/ai_icon.svg" title="KI generierte Einsatzszenarien" text={[
-					"unendlich viele generierbare 3D Umgebungen", 
-					"KI gestützte Charaktere mit realistischem Sprachvermögen und Verhaltensweisen",
-					"auf Polizisten reagierende und dynamische Umwelt"
+				<FeatureCard icon="/images/ai_icon.svg" title="AI generated police operations" text={[
+					"infinitely generatable 3D environments", 
+					"AI assisted characters with realistic speech and behaviors",
+					"police-responsive and dynamic environment"
 				]}/>
-				<FeatureCard icon="/images/vr_icon.svg" title="Personalisiertes Training" text={[
-					"freiwilliges, personalisiertes Selbsttraining", 
-					"Wiedererlebnis von bereits geschehenen Einsätzen",
-					"Vorbereitung auf bevor-stehende Einsätze"
+				<FeatureCard icon="/images/vr_icon.svg" title="Personalized training" text={[
+					"voluntary, personalized self-training", 
+					"re-experiencing deployments that have already happened",
+					"preparation for upcoming missions"
 				]}/>
-				<FeatureCard icon="/images/psych_icon.svg" title="Unterstützung psych. Arbeit" text={[
-					"Evaluation basierend auf Simulationsdaten", 
-					"Psychosoziale Unterstützung z.B. bei Anzeichen einer post-traumatischen Belastungs-störung"
+				<FeatureCard icon="/images/psych_icon.svg" title="Support psych. work" text={[
+					"Evaluation based on simulation data", 
+					"Psychosocial support e.g. in case of signs of post-traumatic stress disorder"
 				]}/>
 		</Flex>
 	</Box>
