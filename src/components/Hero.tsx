@@ -35,7 +35,6 @@ function Hero () {
 						maxWidth="80%"
 						color="polisimGray.300"
 					>
-						{/*Simulationsbasiertes Polizeitraining durch KI-generierte Szenarien: Verbesserung von Einsatzsituationen und Unterstützung der polizeipsychologischen Arbeit.*/}
 						Simulation-based police training through AI-generated scenarios: Improving operational situations and supporting police psychological work.
 					</Text>
 					<HStack mt="30" gap="2">
@@ -53,7 +52,7 @@ function Hero () {
 								<PopoverArrow />
 								<PopoverCloseButton />
 								<PopoverHeader color="polisimBlue.200" bg="polisimBlue.500"><b>Email:</b></PopoverHeader>
-								<PopoverBody>peifer@hm.edu</PopoverBody>
+								<PopoverBody>peifer@hm.edu<br/>schnugg@hm.edu<br/>nils.tesch@hm.edu<br/>linus.vock0@hm.edu</PopoverBody>
 							</PopoverContent>
 						</Popover>
 
@@ -64,7 +63,7 @@ function Hero () {
 				</Hide>
 			</HStack>
 
-			<Divider mt={{ base: "50px", lg: "75px", xl: "100px", '2xl': "125px" }} bottom="0"/>
+			<Divider mt={{ base: "50px", lg: "75px", xl: "100px", '2xl': "125px" }} bottom="0" id="hero-end"/>
 		</Box>
 	)
 }

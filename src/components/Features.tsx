@@ -22,7 +22,7 @@ function Features () {
 	};
 
 	return (
-		<Box ml={responsiveMargin} mr={responsiveMargin} mt={responsiveMarginTop}>
+		<Box ml={responsiveMargin} mr={responsiveMargin} mt={responsiveMarginTop} id="features">
 			<Flex flexDirection={{ base: "column", md: "column", lg: "row" }} gap={{ base: "5", md: "5", lg: "5" }} justifyContent="space-between">
 				<FeatureCard icon="/images/ai_icon.svg" title="AI generated police operations" text={[
 					"infinitely generatable 3D environments", 

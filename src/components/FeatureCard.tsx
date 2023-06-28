@@ -21,7 +21,7 @@ function FeatureCard(props: any) {
       <CardHeader pb="0">
         <HStack>
           <Image src={props.icon} boxSize="30px" loading="lazy"/>
-          <Heading fontSize="lg">{props.title}</Heading>
+          <Text fontSize="lg" fontWeight="700">{props.title}</Text>
         </HStack>
       </CardHeader>
       <CardBody>

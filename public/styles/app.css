@@ -8,3 +8,34 @@
     clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0 100%);
 }
 
+html {
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.prompting-image {
+    transition: 0.2s ease-out;
+}
+
+
+.prompting-image:hover {
+    transform: perspective(1000px) rotateY(5deg) rotateX(-5deg);
+    transition: 0.2s ease-out;
+}
+
+
+.dashboard-image {
+    transition: 0.2s ease-out;
+}
+
+
+.dashboard-image:hover {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+    transition: 0.2s ease-out;
+}

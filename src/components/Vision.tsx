@@ -25,7 +25,7 @@ function VisionBlock(props: any) {
 			<CardHeader pb="0" pl="0" pr="0">
 				<HStack>
 					<Image src="/images/eye_icon.svg" boxSize="30px" loading="lazy"/>
-					<Heading fontSize="lg">{props.title}</Heading>
+					<Text fontSize="lg" fontWeight="700">{props.title}</Text>
 				</HStack>
 			</CardHeader>
 			<CardBody pl="0" pr="0">
@@ -46,7 +46,7 @@ function Vision() {
 	};
 
 	return (
-		<Box left="0" mt={{base: "50", lg: "100", xl: "150"}} bg="polisimBlue.500" height="auto" width="100%" display="flex" alignItems="center">
+		<Box left="0" mt={{base: "50", lg: "100", xl: "150"}} bg="rgba(0,0,0,0.0)" height="auto" width="100%" display="flex" alignItems="center">
 			<Flex
 				left="0" right="0" 
 				ml={{ base: "0", lg: "50", xl: "250" }} mr={{ base: "0", lg: "50", xl: "250" }}

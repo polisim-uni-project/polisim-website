@@ -34,7 +34,7 @@ function VisionBlock(props: any) {
 			<CardHeader p="0">
 				<HStack>
 					<Image src="/images/process_icon.svg" boxSize="30px" loading="lazy"/>
-					<Heading fontSize="lg">{props.title}</Heading>
+					<Text fontSize="lg" fontWeight="700">{props.title}</Text>
 				</HStack>
 			</CardHeader>
 			<CardBody pl="0" pr="0">
@@ -47,13 +47,12 @@ function VisionBlock(props: any) {
 
 function Process() {
 
-	const [isMobile] = useMediaQuery("(max-width: 450px)");
-
 	return (
 		<Box
 			mt="75" mb={{base: "75", md: "150"}}
 			width="100%" display="flex" alignItems="center"
 			height="auto"
+			id="demo"
 		>
 			<Flex
 				maxHeight="100%"
@@ -69,7 +68,7 @@ function Process() {
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				>
                     <VisionBlock title="Polisim process" text="
-                        We take care of the entire infrastructure:
+                        We take care of the entire process:
                         From simulation to evaluation.
                     "/>
 
@@ -93,7 +92,6 @@ function Process() {
 					flex="1" 
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				/>
-				{/* isMobile ? "/images/process_process_mobile.svg" : "/images/polisim_process.svg" */}
 			</Flex>
 	    </Box>
 	);

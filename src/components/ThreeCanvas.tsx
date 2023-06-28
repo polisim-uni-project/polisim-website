@@ -7,9 +7,7 @@ import { Box } from "@chakra-ui/react"
 import { MathUtils, Color, Vector3 } from "three";
 import { OrthographicCamera } from '@react-three/drei'
 
-
 const Model = () => {
-
   const gltf = useLoader(GLTFLoader, "/images/vr_head.gltf");
 
   const { size } = useThree();
@@ -59,7 +57,7 @@ export default function ThreeCanvas() {
   return (
     <Box width="50%" height={{ base: "325px", md: "325px", lg: "425px", xl: "550px", '2xl': "650px" }} alignContent="center" right="0" >
       <Canvas style={{ width: "100%", height: "100%", right: "0px"}}>
-        <Suspense fallback={null}>
+        <Suspense>
 
 						<ambientLight intensity={0.75} color={new Color(0xa6bcff)}/>
 						<spotLight position={[7, 10, 10]} angle={0.325} penumbra={1} />

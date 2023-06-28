@@ -1,7 +1,9 @@
 import {
   ChakraProvider,
   Box,
-  extendTheme
+  extendTheme,
+  ColorModeScript,
+  Hide
 } from "@chakra-ui/react"
 import Navbar from "./components/Navigation"
 import Hero from "./components/Hero"
@@ -9,6 +11,7 @@ import Features from "./components/Features"
 import Vision from "./components/Vision"
 import Process from "./components/Process"
 import Footer from "./components/Footer"
+import Demo from "./components/Demo"
 
 const theme = extendTheme({
   colors: {
@@ -24,13 +27,17 @@ const theme = extendTheme({
       200: "#FAFAFA",
       300: "#282828"
     }
-  }
+  },
+  initialColorMode: 'light',
+  useSystemColorMode: false,
 })
 
 
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
     </style>
@@ -43,15 +50,33 @@ export const App = () => (
     <Hero/>
     
     <Features/>
-
-    {/*
-    <Box position="absolute" top="85%" zIndex={-1} w='200%' overflow="visible" right="-150%" h='1000px' bgGradient='radial(#FF00A81A, #ffffff26 65%)' />
-    <Box position="absolute" top="70%" zIndex={-1} w='200%' overflow="visible" left="-150%" h='1000px' bgGradient='radial(#486CC747, #ffffff26 65%)' />
-     */}
     
+    <Box
+      position="absolute"
+      top="35%"
+      zIndex={-1}
+      w="150vw"
+      overflow="hidden"
+      left="-100vw"
+      h="1500px"
+      bgGradient="radial(#FF00A819, #ffffff26 65%)"
+    />
+    <Box
+      position="absolute"
+      top="35%"
+      zIndex={-1}
+      w="150vw"
+      overflow="hidden"
+      right="-100vw"
+      h="1000px"
+      bgGradient="radial(#486CC745, #ffffff26 65%)"
+    />
+
     <Vision/>
 
     <Process/>
+
+    <Demo/>
 
     <Footer/>
 
