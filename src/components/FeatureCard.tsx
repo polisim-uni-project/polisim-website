@@ -8,12 +8,12 @@ function FeatureCard(props: any) {
       flex="1" 
       maxWidth={{ md: "none", lg: "300" }} 
       bg="rgba(0, 0, 0, 0.0)" 
-      borderColor="polisimBlue.400" 
+      borderColor="#fafafa" 
       borderWidth="1px"
-      boxShadow="0 9px 23px -13px rgba(0, 0, 255, 0.125)"
+      boxShadow="0 15px 30px -5px rgba(0, 0, 0, 0.1)"
       sx={{
         "&:hover": {
-          boxShadow: "0 10px 23px -13px rgba(0, 0, 255, 0.25)",
+          boxShadow: "0 17px 35px -5px rgba(0, 0, 255, 0.2)",
           transition: "all .1s ease-out"
         },
       }}

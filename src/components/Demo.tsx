@@ -1,4 +1,4 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import {
 	Box,
 	Flex,
@@ -7,7 +7,7 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	Heading,
+	Link,
 	Text,
     Button,
 	useMediaQuery,
@@ -67,8 +67,8 @@ function Demo() {
 					flex="1"
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				>
-                    <VisionBlock title="Demo" text="
-                        The Polisim software is currently under development. But we still want to share our progress with you - here are our prototypes!
+                    <VisionBlock title="Prototype Demo" text="
+                        The Polisim software is currently under development. But we still want to share our progress with you - so here are our prototypes!
                     "/>                    
 				</Box>
 				<Flex
@@ -99,9 +99,11 @@ function Demo() {
 							gap="2"
 						>
 							<Text width="100%">Take a sneek-peek into our main Polisim software!</Text>
-							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }} width={{ base: "200px", xl: "100%" }}>
-								to the prototype
-							</Button>
+							<Link isExternal href="https://www.figma.com/file/81e1QO1ArIf0gKysbYIVBB/Gruppe-8?type=design&node-id=2127-178&mode=design&t=OFqOOHshTNEoqoWx-0" style={{ textDecoration: "none" }}>
+								<Button rightIcon={<ExternalLinkIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }} width="200px">
+									to the prototype
+								</Button>
+							</Link>
 						</VStack>
 					</Flex>
 					<Flex
@@ -117,9 +119,11 @@ function Demo() {
 							gap="2"
 						>
 							<Text width="100%">One of the most important parts: The Polisim Dashboard.</Text>
-							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }} width={{ base: "200px", xl: "100%" }}>
-								to the prototype
-							</Button>
+							<Link isExternal href="https://www.figma.com/file/81e1QO1ArIf0gKysbYIVBB/Gruppe-8?type=design&node-id=2127-178&mode=design&t=OFqOOHshTNEoqoWx-0" style={{ textDecoration: "none" }}>
+								<Button rightIcon={<ExternalLinkIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }} width="200px">
+									to the prototype
+								</Button>
+							</Link>
 						</VStack>
 						<Image
 							className="dashboard-image"

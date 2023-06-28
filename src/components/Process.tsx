@@ -6,7 +6,7 @@ import {
 	Card,
 	CardHeader,
 	CardBody,
-	Heading,
+	Divider,
 	Text,
     Button,
 	useMediaQuery,
@@ -52,7 +52,6 @@ function Process() {
 			mt="75" mb={{base: "75", md: "150"}}
 			width="100%" display="flex" alignItems="center"
 			height="auto"
-			id="demo"
 		>
 			<Flex
 				maxHeight="100%"
@@ -72,20 +71,19 @@ function Process() {
                         From simulation to evaluation.
                     "/>
 
-						<Popover>
-							<PopoverTrigger>
-							<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }}>
-								book a demo
-							</Button>
-							</PopoverTrigger>
-							<PopoverContent width="150px">
-								<PopoverArrow />
-								<PopoverCloseButton />
-								<PopoverHeader color="polisimBlue.200" bg="polisimBlue.500">coming soon...</PopoverHeader>
-							</PopoverContent>
-						</Popover>
-
-                    
+					<Popover>
+						<PopoverTrigger>
+						<Button rightIcon={<ArrowForwardIcon />} size={{ base: "sm", xl: "sm", '2xl': "md" }} variant="solid" bg="polisimBlue.300" color="polisimBlue.200" _hover={{ bg: "polisimBlue.400" }}>
+							book a demo
+						</Button>
+						</PopoverTrigger>
+						<PopoverContent width="300px">
+							<PopoverArrow />
+							<PopoverCloseButton />
+							<PopoverHeader color="polisimBlue.200" bg="polisimBlue.500">coming soon...</PopoverHeader>
+							<PopoverBody>Until then, check out our prototype demo below!</PopoverBody>
+						</PopoverContent>
+					</Popover>
 				</Box>
 				<Image
 					src="/images/polisim_process_en.svg"
@@ -93,6 +91,7 @@ function Process() {
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				/>
 			</Flex>
+
 	    </Box>
 	);
 }

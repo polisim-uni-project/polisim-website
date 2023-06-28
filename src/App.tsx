@@ -53,7 +53,7 @@ export const App = () => (
     
     <Box
       position="absolute"
-      top="35%"
+      top="20%"
       zIndex={-1}
       w="150vw"
       overflow="hidden"
@@ -63,7 +63,7 @@ export const App = () => (
     />
     <Box
       position="absolute"
-      top="35%"
+      top="40%"
       zIndex={-1}
       w="150vw"
       overflow="hidden"
@@ -79,6 +79,27 @@ export const App = () => (
     <Demo/>
 
     <Footer/>
+
+    <Box
+      position="absolute"
+      bottom="12%"
+      zIndex={-1}
+      w="150vw"
+      overflow="hidden"
+      right="-100vw"
+      h="1000px"
+      bgGradient="radial(#FF00A819, #ffffff26 65%)"
+    />
+    <Box
+      position="absolute"
+      bottom="0%"
+      zIndex={-1}
+      w="150vw"
+      overflow="hidden"
+      left="-100vw"
+      h="1000px"
+      bgGradient="radial(#486CC745, #ffffff26 65%)"
+    />
 
   </ChakraProvider>
 )
