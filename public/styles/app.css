@@ -39,3 +39,8 @@ body {
     transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
     transition: 0.2s ease-out;
 }
+
+
+.video {
+    height: 100%;
+}

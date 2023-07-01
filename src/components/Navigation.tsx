@@ -1,5 +1,5 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Flex, Text, Button, Link, Hide, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Link, Hide, Heading, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverHeader, PopoverTrigger, HStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { Github, Network, Phone, Clapperboard, User } from 'lucide-react';
 
@@ -77,7 +77,11 @@ function Navbar() {
       bg="#ffffff99"
     >
       <Box as={Link} href="/" mr="auto" style={{ textDecoration: 'none' }} sx={{ "&:hover": { color: "polisimBlue.100" }}}>
-        <Text fontSize="xl" fontWeight="bold" color="gray.750">POLISIM</Text>
+        <HStack>
+          <img className="logo" width="29px" src="/images/polisim_logo.svg" />
+          <Heading fontSize="xl" fontWeight="bold" color="polisimGray.300">POLISIM</Heading>
+        </HStack>
+        
       </Box>
 
       <Hide breakpoint="(max-width: 820px)">

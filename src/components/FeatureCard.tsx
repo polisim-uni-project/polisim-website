@@ -13,7 +13,7 @@ function FeatureCard(props: any) {
       boxShadow="0 15px 30px -5px rgba(0, 0, 0, 0.1)"
       sx={{
         "&:hover": {
-          boxShadow: "0 17px 35px -5px rgba(0, 0, 255, 0.2)",
+          boxShadow: "0 17px 35px -5px rgba(0, 0, 255, 0.115)",
           transition: "all .1s ease-out"
         },
       }}

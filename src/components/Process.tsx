@@ -84,6 +84,17 @@ function Process() {
 							<PopoverBody>Until then, check out our prototype demo below!</PopoverBody>
 						</PopoverContent>
 					</Popover>
+
+					<Box width="110%" mt="15px" alignItems="center">
+						<video className="video" autoPlay loop muted playsInline>
+							<source 
+							src="/images/process.mp4" 
+							type='video/mp4; codecs="hvc1"' />
+							<source 
+							src="/images/process.webm" 
+							type="video/webm" />
+						</video>
+					</Box>
 				</Box>
 				<Image
 					src="/images/polisim_process_en.svg"
@@ -91,7 +102,7 @@ function Process() {
 					width={{base: "75%", lg: "75%", xl: "50%"}}
 				/>
 			</Flex>
-
+			
 	    </Box>
 	);
 }

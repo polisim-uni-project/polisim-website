@@ -3,7 +3,9 @@ import {
   Box,
   extendTheme,
   ColorModeScript,
-  Hide
+  Hide,
+  Text,
+  Flex
 } from "@chakra-ui/react"
 import Navbar from "./components/Navigation"
 import Hero from "./components/Hero"
@@ -33,8 +35,17 @@ const theme = extendTheme({
 })
 
 
+const responsiveMargin: { [key: string]: string } = {
+  base: "15%",
+  md: "15%",
+  lg: "10%",
+  xl: "15%",
+  '2xl': "20%"
+};
+
 
 export const App = () => (
+
   <ChakraProvider theme={theme}>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
 
