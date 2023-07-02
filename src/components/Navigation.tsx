@@ -79,7 +79,7 @@ function Navbar() {
       <Box as={Link} href="/" mr="auto" style={{ textDecoration: 'none' }} sx={{ "&:hover": { color: "polisimBlue.100" }}}>
         <HStack>
           <img className="logo" width="29px" src="/images/polisim_logo.svg" />
-          <Heading fontSize="xl" fontWeight="bold" color="polisimGray.300">POLISIM</Heading>
+          <Heading fontSize="xl" fontWeight="bold" color="polisimGray.300">Polisim</Heading>
         </HStack>
         
       </Box>
